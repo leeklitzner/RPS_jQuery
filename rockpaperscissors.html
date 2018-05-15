@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="rockpaperscissors.css" />
+  <head>
+    <link rel="stylesheet" href="rockpaperscissors.css" />
+  </head>
+  <body>
 
-</head>
+   <div class="choices">
+    <h1>Rock, Paper, Scissors</h1>
+    <h2>Welcome to the most skillful ever created.  This has been around for ages and has been known to make grown men cry.  Try your luck if you dare!</h2>
 
-<body>
+    <h3>Select Your Weapon of Choice:</h3>
 
- <div class="gamebox">
-  <h1>Rock, Paper, Scissors</h1>
-  <h2>Welcome to the most skillful ever created.  This has been around for ages and has been known to make grown men cry.  Try your luck if you dare!</h2>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
 
-  <h3>Select your move:</h3>
-  <button id="rock">Rock</button>
-  <button id="paper">Paper</button>
-  <button id="scissors">Scissors</button>
+    <div class="input">
+      <i id="rock" class="hand-rock"></i>
+      <i id="paper" class="hand-paper"></i>
+      <i id="scissors" class="hand-scissors"></i>
+    </div>
 
-
-
-
-  <div class="usercontainer">
-    <i id="rock" class="hand-rock"></i>
-    <i id="paper" class="hand-paper"></i>
-    <i id="scissors" class="hand-scissors"></i>
-  </div>
-
-  <div class="computeranswer">
-  <h3>Computer choice:</h3>
-    <p id="playerResult"></p>
-    <p id="compResult"></p>
-    <p id="winner"></p>
-  </div>
+    <div class="computeranswer">
+    <h3>Computer choice:</h3>
+      <p id="playerResult"></p>
+      <p id="compResult"></p>
+      <p id="winner"></p>
+    </div>
 
 
-  <table>
-    <tr>
-      <th colspan="2">Scoreboard</th>
-    </tr>
-    <tr>
-       <td>Playa</td>
-       <td>Robot</td>
-    </tr>
-    <tr>
-       <td id="playerScore">0</td>
-       <td id="compScore">0</td>
-    </tr>
-  </table>
+    <table>
+      <tr>
+        <th colspan="2">Scoreboard</th>
+      </tr>
+      <tr>
+         <td>Player</td>
+         <td>Robot</td>
+      </tr>
+      <tr>
+         <td id="playerScore">0</td>
+         <td id="compScore">0</td>
+      </tr>
+    </table>
 
-  <button id="reset">Reset</button>
- </div>
-</body>
+    <button id="reset">Reset</button>
+   </div>
+
+   <script src="jquery-3.3.1.min.js"></script>
+   <script src="rockpaperscissors.js"></script>
+
+  </body>
+</html>
